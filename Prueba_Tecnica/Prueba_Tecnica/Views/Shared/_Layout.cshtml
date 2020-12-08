@@ -24,28 +24,55 @@
 
             <ul class="list-unstyled components">
                 @{
-                  
-                      if (ViewBag.Values.ToString() == "1")
-                      {
-                            <li class="nav-item"> <a class="nav-link " asp-controller="#" asp-action="#">Ventas por categoria</a> </li>
+                if (ViewData["datos"].ToString() == "Reportes")
+                    {
+                    <li class="nav-item"> <a class="nav-link " asp-controller="#" asp-action="#">Ventas por categoria</a> </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link " asp-area="" asp-controller="Categorias" asp-action="Index">Ventas Por Producto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " asp-area="" asp-controller="Productos" asp-action="Index">Ventas por Empleado</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " asp-area="" asp-controller="Tiendas" asp-action="Index">Centas Por tipo de orden</a>
-                            </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Categorias" asp-action="Index">Ventas Por Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Productos" asp-action="Index">Ventas por Empleado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Tiendas" asp-action="Index">Centas Por tipo de orden</a>
+                    </li>
 
-                  }
-                  else
-                  {
-                      <h1>HOLA</h1>
-                  }
                     }
-                
+                    else if (ViewData["datos"].ToString() == "Tienda")
+                    {
+                    <li class="nav-item"> <a class="nav-link " asp-controller="#" asp-action="#">Configuracion</a> </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="#" asp-action="Index">Empleados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="#" asp-action="Index">Caja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="#" asp-action="Index">Descuentos</a>
+                    </li>
+                    }
+                    else if (ViewData["datos"].ToString() == "Menu")
+                    {
+                    <li class="nav-item"> <a class="nav-link " asp-controller="#" asp-action="#">Categorias</a> </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Categorias" asp-action="Index">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Productos" asp-action="Index">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Tiendas" asp-action="Index">Extras</a>
+                    </li>
+                    }
+                    else
+                    {
+
+                    }
+                }
+
             </ul>
         </nav>
 
