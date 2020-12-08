@@ -8,6 +8,6 @@
     "\\Prueba_Tecnica\\Prueba_Tecnica\\Views\\Home",
     "\\Prueba_Tecnica\\Prueba_Tecnica\\Views\\Shared"
   ],
-  "SelectedNode": "\\Prueba_Tecnica\\Prueba_Tecnica\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

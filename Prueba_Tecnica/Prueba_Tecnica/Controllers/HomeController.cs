@@ -36,19 +36,38 @@ namespace Prueba_Tecnica.Controllers
 
     public IActionResult Reportes()
     {
-      ViewData["dato"] = "Reportes";
+   
       return View();
     }
 
     public IActionResult ConfiguracionesMenu()
     {
-      ViewBag.dato = "Menu";
       return View();
     }
 
     public IActionResult ConfiguracionesTienda()
     {
-      ViewBag.dato = "Tienda";
+      
+      return View();
+    }
+    public IActionResult Categorias()
+    {
+     
+      return View();
+    }
+    public IActionResult Productos()
+    {
+     
+      return View();
+    }
+    public IActionResult Ordenes()
+    {
+     
+      return View();
+    }
+    public IActionResult Empleados()
+    {
+     
       return View();
     }
   }
